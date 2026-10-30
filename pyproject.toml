@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sign-safe"
+version = "0.1.0"
+description = "Offline signing-payload inspection and policy verdicts for agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.scripts]
+sign-safe = "sign_safe.cli:main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["sign_safe", "sign_safe.*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+sign_safe = ["fixtures/*.json", "fixtures/*.yaml"]
+"sign_safe.decode" = ["selectors.json"]

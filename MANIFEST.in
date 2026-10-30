@@ -1,0 +1,10 @@
+include LICENSE README.md SECURITY.md ROADMAP.md requirements.txt
+include test_sign_safe.py
+include tools/check_imports.py
+include .github/workflows/CI.yml
+recursive-include sign_safe/fixtures *.json *.yaml
+include sign_safe/decode/selectors.json
+exclude GATE_FINDINGS.md T_brief.md V_brief.md PUBLISH_REPORT.md SIGN_SAFE_REPORT.md
+prune .venv
+prune .pytest_cache
+global-exclude *.py[cod] .DS_Store

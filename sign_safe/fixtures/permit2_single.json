@@ -1,0 +1,30 @@
+{
+  "expected": {
+    "action": "allowance",
+    "allowances": [
+      {
+        "amount": 100,
+        "expiration": 2000000100,
+        "nonce": 3,
+        "token": "0x3333333333333333333333333333333333333333",
+        "unlimited": false
+      }
+    ],
+    "deadline": 2000000000,
+    "kind": "PermitSingle",
+    "spender": "0x2222222222222222222222222222222222222222",
+    "type": "permit2"
+  },
+  "payload": {
+    "details": {
+      "amount": 100,
+      "expiration": 2000000100,
+      "nonce": 3,
+      "token": "0x3333333333333333333333333333333333333333"
+    },
+    "primaryType": "PermitSingle",
+    "sigDeadline": 2000000000,
+    "spender": "0x2222222222222222222222222222222222222222"
+  },
+  "type": "permit2"
+}

@@ -1,0 +1,45 @@
+# Python caches and native extensions
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+.python-version
+
+# Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Test, coverage, and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Local release review and task briefs: never commit
+GATE_FINDINGS.md
+T_brief.md
+V_brief.md

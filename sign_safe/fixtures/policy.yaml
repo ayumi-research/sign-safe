@@ -1,0 +1,9 @@
+# Flat YAML subset; addresses must be strings, amounts are raw token units.
+known_spenders:
+  - "0x2222222222222222222222222222222222222222"
+known_targets: []
+allowed_chain_ids: []
+max_deadline: 2003000000
+max_validity_seconds: 2592000
+max_amount: 1000
+confirm_unknown_spenders: true

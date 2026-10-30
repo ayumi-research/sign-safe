@@ -1,0 +1,40 @@
+{
+  "expected": {
+    "action": "signature_transfer",
+    "allowances": [
+      {
+        "amount": 100,
+        "expiration": null,
+        "token": "0x3333333333333333333333333333333333333333",
+        "unlimited": false
+      }
+    ],
+    "deadline": 2000000000,
+    "kind": "PermitTransferFrom",
+    "nonce": 9,
+    "recipient_bound_by_signature": false,
+    "spender": "0x2222222222222222222222222222222222222222",
+    "type": "permit2",
+    "unsigned_transfer_details": [
+      {
+        "requested_amount": 50,
+        "to": "0x1111111111111111111111111111111111111111"
+      }
+    ]
+  },
+  "payload": {
+    "deadline": 2000000000,
+    "nonce": 9,
+    "permitted": {
+      "amount": 100,
+      "token": "0x3333333333333333333333333333333333333333"
+    },
+    "primaryType": "PermitTransferFrom",
+    "spender": "0x2222222222222222222222222222222222222222",
+    "transferDetails": {
+      "requestedAmount": 50,
+      "to": "0x1111111111111111111111111111111111111111"
+    }
+  },
+  "type": "permit2"
+}
